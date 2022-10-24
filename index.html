@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css"/>
+</head>
+    <center>
+<body>
+    <header>
+        <h1 class = "title">My Shows</h1>
+    </header>
+    <div class = "addShow">
+        <button id="newShow">Add Show</button>
+    </div>
+
+   
+    </div>
+    <div class = "bg-modal">
+        <div class = "modal-content">
+            <div class="close">+</div>
+            <img src = "./images/animegirl.png" height = "120px" >
+                <input type = "text" id = "nameOfShow" class= "popInput" placeholder="Name" autocomplete="off" >
+                <input type = "number" id = "ratingOfShow" class= "popInput" placeholder="Rating" autocomplete="off">
+                <br>
+                <input type = "submit" id = "submitShow" value = "Add" onclick="addRow()">
+            
+        </div>
+    </div>
+
+    <table id="tab">
+        <thead>
+            <tr>
+                <th button id = "nameSort">Name</th>
+                <th button id = "ratingSort">Rating</th>
+                <th id="tot">Total</th>
+            </tr>
+        </thead>
+        </table>
+
+    </center>
+    <script src="index.js"></script>
+</body>
